@@ -7,12 +7,14 @@ while True:
     data = {"NIM": nim, "Nama":nama}
 
     tambah_lagi = input("Apakah ingin menambah data lagi? (ya/tidak): ")
-    if tambah_lagi == 'ya':
+    if tambah_lagi.lower() != 'ya':
         print (data)
     else:    
         break
+
+    print("Data Mahasiswa")
     for i in mahasiswa:
-        print(i['nama'],":", i['nim'])
+        print(i['Nama'],":", i['NIM'])
     
 
 
