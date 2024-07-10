@@ -11,6 +11,9 @@ while True:
         print (data)
     else:    
         break
+    for i in mahasiswa:
+        print(i['nama'],":", i['nim'])
+    
 
 
 
